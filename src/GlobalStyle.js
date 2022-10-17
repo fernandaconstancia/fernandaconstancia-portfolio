@@ -7,11 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Ubuntu", Helvetica, Sans-Serif;
     list-style: none;
-    
   }
 
   html {
     background: var(--color-6);
+    height: 100vh;
   }
 
   :root {
