@@ -29,7 +29,7 @@ export const Name = styled.div`
     font-size: 2rem;
 
     @media (max-width: 860px) {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -51,6 +51,7 @@ export const Mobile = styled.div`
     position: absolute;
     opacity: 0;
   }
+
   label {
     display: none;
     position: absolute;
@@ -59,6 +60,7 @@ export const Mobile = styled.div`
     z-index: 1;
     cursor: pointer;
   }
+
   span {
     display: none;
     position: relative;
@@ -68,6 +70,7 @@ export const Mobile = styled.div`
     border-radius: 10px;
     transition: all 0.3s linear;
   }
+
   span::after,
   span::before {
     content: "";
@@ -79,20 +82,25 @@ export const Mobile = styled.div`
     border-radius: 10px;
     transition: all 0.3s linear;
   }
+
   span::before {
     top: 14px;
   }
+
   input:checked ~ span {
     background-color: transparent;
   }
+
   input:checked ~ span::before {
     transform: rotate(-45deg);
     top: 0;
   }
+
   input:checked ~ span::after {
     transform: rotate(45deg);
     top: 0;
   }
+
   @media (max-width: 860px) {
     display: flex;
     label,
@@ -109,7 +117,6 @@ export const Nav = styled.nav`
   color: var(--color-1);
   cursor: pointer;
   font-size: 1rem;
-
   div {
     padding: 5px 12px;
 
@@ -126,8 +133,8 @@ export const Nav = styled.nav`
     overflow: hidden;
     top: 72px;
     right: 0;
-    width: 100%;
-    /* height: 100vh; */
+    /* width: 100%; */
+    width: ${(props) => (props.mobile ? "0" : "100%")};
     /* border-radius: 8px 0 0 8px; */
     color: var(--color-1);
     background-color: var(--color-7);
@@ -136,6 +143,15 @@ export const Nav = styled.nav`
 
     div {
       padding: 10px;
+    }
+
+    .menuOpen {
+      background: red;
+    }
+
+    .menuClose {
+      display: none;
+      width: 0;
     }
   }
 `;

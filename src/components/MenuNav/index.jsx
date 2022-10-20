@@ -5,8 +5,12 @@ import { useState } from "react";
 
 export const MenuNav = () => {
   const [navMobile, setNavMobile] = useState(false);
-
   const nav = useNavigate();
+
+  const navigate = (route) => {
+    setNavMobile(!navMobile);
+    nav(route);
+  };
 
   return (
     <div>
@@ -19,6 +23,7 @@ export const MenuNav = () => {
 
           <S.Mobile>
             <input
+              checked={navMobile}
               onClick={() => setNavMobile(!navMobile)}
               type="checkbox"
               name="mobile"
@@ -29,11 +34,11 @@ export const MenuNav = () => {
           </S.Mobile>
 
           <S.Nav mobile={!navMobile}>
-            <div onClick={() => nav("/")}>Início</div>
-            <div onClick={() => nav("/about")}>Sobre</div>
-            <div onClick={() => nav("/project")}>Projetos</div>
-            <div onClick={() => nav("/resume")}>Currículo</div>
-            <div onClick={() => nav("/contact")}>Contato</div>
+            <div onClick={() => navigate("/")}>Início</div>
+            <div onClick={() => navigate("/about")}>Sobre</div>
+            <div onClick={() => navigate("/project")}>Projetos</div>
+            <div onClick={() => navigate("/resume")}>Currículo</div>
+            <div onClick={() => navigate("/contact")}>Contato</div>
           </S.Nav>
         </S.Box>
       </S.Header>
