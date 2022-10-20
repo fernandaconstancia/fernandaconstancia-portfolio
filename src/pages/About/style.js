@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   max-width: 100%;
   /* max-height: 100%; */
-  max-height: 100vh;
+  height: 90vh;
 `;
 
 export const BoxText = styled.div`
