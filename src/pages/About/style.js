@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5rem 1rem 0 1rem;
+  padding: 4rem 1rem 0 1rem;
 `;
 
 export const BoxText = styled.div`
@@ -21,7 +21,7 @@ export const BoxInfo = styled.div`
   flex-direction: column;
   width: 100%;
   line-height: 1.2;
-  padding: 30px;
+  /* padding: 30px; */
 
   p {
     color: var(--color-5);

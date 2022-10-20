@@ -6,13 +6,10 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  /* padding: 1rem; */
   padding: 4rem 1rem 0 1rem;
-  /* height: 90vh; */
 
   @media (min-width: 860px) {
     flex-direction: row-reverse;
-    /* padding: 5rem 1rem; */
   }
 `;
 
