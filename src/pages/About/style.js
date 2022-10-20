@@ -4,10 +4,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  max-width: 100%;
-  /* max-height: 100%; */
-  height: 90vh;
+  width: 100%;
+  padding: 5rem 1rem 0 1rem;
 `;
 
 export const BoxText = styled.div`
