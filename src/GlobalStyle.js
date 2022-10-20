@@ -5,11 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
     font-family: "Ubuntu", Helvetica, Sans-Serif;
     list-style: none;
   }
 
-  html {
+  html, body {
     background: var(--color-6);
     height: 100vh;
   }
