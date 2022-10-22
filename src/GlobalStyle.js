@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     --color-7: #333333; 
     --color-8: #6E6E6E;
     --color-9: #ADADAD;
+    --color-error: #e34034;
 
   }
 `;

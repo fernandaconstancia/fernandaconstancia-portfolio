@@ -37,7 +37,7 @@ export const MenuNav = () => {
             <div onClick={() => navigate("/")}>Início</div>
             <div onClick={() => navigate("/about")}>Sobre</div>
             <div onClick={() => navigate("/project")}>Projetos</div>
-            <div onClick={() => navigate("/resume")}>Currículo</div>
+            {/* <div onClick={() => navigate("/resume")}>Currículo</div> */}
             <div onClick={() => navigate("/contact")}>Contato</div>
           </S.Nav>
         </S.Box>

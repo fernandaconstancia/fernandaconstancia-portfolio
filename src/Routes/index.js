@@ -9,7 +9,7 @@ export const Router = () => {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/about" element={<About />} />
       <Route path="/project" />
-      <Route path="/resume" />
+      {/* <Route path="/resume" /> */}
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );

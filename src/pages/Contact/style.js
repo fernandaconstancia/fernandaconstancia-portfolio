@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 4rem 1rem 0 1rem;
+  height: 90vh;
 `;
 
 export const Header = styled.h1`
@@ -35,15 +35,19 @@ export const List = styled.ul`
   li {
     width: 100%;
     max-width: 70px;
-    color: var(--color-9);
     font-size: 1rem;
 
-    svg {
-      margin-right: 5px;
-    }
+    a {
+      text-decoration: none;
+      color: var(--color-9);
 
-    :hover {
-      opacity: 0.2;
+      svg {
+        margin-right: 5px;
+      }
+
+      :hover {
+        opacity: 0.2;
+      }
     }
   }
 `;
@@ -54,60 +58,6 @@ export const Form = styled.form`
   padding: 1rem;
   width: 100%;
   border-radius: 8px;
-`;
-
-export const Input = styled.div`
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  label {
-    color: var(--color-9);
-    font-size: 1rem;
-  }
-
-  input {
-    background: var(--color-9);
-    border-radius: 6px;
-    width: 100%;
-    margin-bottom: 1rem;
-    margin-top: 0.3rem;
-    color: var(--color-2);
-    outline: none;
-    padding: 10px;
-    border: 2px solid var(--color-9);
-
-    &:focus {
-      border: 2px solid var(--color-5);
-    }
-
-    &::placeholder {
-      color: var(--color-6);
-    }
-  }
-`;
-
-export const Textarea = styled(Input)`
-  textarea {
-    background: var(--color-9);
-    border-radius: 6px;
-    max-width: 100%;
-    margin-top: 0.3rem;
-    color: var(--color-2);
-    padding: 10px;
-    outline: none;
-    border: 2px solid var(--color-9);
-    resize: vertical;
-
-    &:focus {
-      border: 2px solid var(--color-5);
-    }
-
-    &::placeholder {
-      color: var(--color-6);
-    }
-  }
 `;
 
 export const Button = styled.button`

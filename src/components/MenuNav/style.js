@@ -111,6 +111,8 @@ export const Mobile = styled.div`
 `;
 
 export const Nav = styled.nav`
+  /* position: relative;
+  height: 100vh; */
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -143,15 +145,6 @@ export const Nav = styled.nav`
 
     div {
       padding: 10px;
-    }
-
-    .menuOpen {
-      background: red;
-    }
-
-    .menuClose {
-      display: none;
-      width: 0;
     }
   }
 `;
